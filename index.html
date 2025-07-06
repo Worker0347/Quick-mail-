@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick Mel ‑ Temporary Email</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📧 Quick Mel</h1>
+      <p class="subtitle">Free Temp Mail | Fast & Secure</p>
+    </header>
+
+    <section class="email-box">
+      <label>Your Email:</label>
+      <div id="email">Loading…</div>
+      <div class="btn-group">
+        <button onclick="regenerate()">♻️ Regenerate</button>
+        <button onclick="deleteEmail()">🗑️ Delete</button>
+        <button onclick="copyEmail()">📋 Copy</button>
+        <button onclick="toggleTheme()">🌓 Mode</button>
+      </div>
+    </section>
+
+    <section class="inbox-box">
+      <h2>📥 Inbox</h2>
+      <button onclick="refreshInbox()">🔄 Refresh Inbox</button>
+      <ul id="inbox"></ul>
+    </section>
+
+    <footer>
+      <p>Quick Mel • Free Temp Mail • Hosted by You</p>
+    </footer>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
